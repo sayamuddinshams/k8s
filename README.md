@@ -10,9 +10,9 @@ The project is organized into the following key components:
 
 | File/Directory | Description |
 | :--- | :--- |
-| `apache2/` | Kubernetes manifests and configuration files for deploying the **Apache HTTP Server** (e.g., Deployments, Services, ConfigMaps). Apache is often used for serving dynamic content. |
+| `apache2/` | Kubernetes manifests and configuration files for deploying the **Apache HTTP Server** (e.g., Deployments, Services, ConfigMaps). Apache is often used for serving dynamic content or a backend application server. |
 | `config.yml` | A centralized configuration file (likely a Kubernetes ConfigMap or application configuration) defining environment variables and settings for the deployed services. |
-| `kind.sh` | A comprehensive shell script for managing the Kind cluster lifecycle (e.g., `create-cluster`, `delete-cluster`, `load-images`). |
+| `kind.sh` | A comprehensive shell script for managing the Kind cluster lifecycle (e.g., `create-cluster`, `delete-cluster`, `load-images`). **Always review this script before execution.** |
 | `mysql/` | Kubernetes manifests for the **MySQL** database, including PersistentVolumeClaims (PVC) for data persistence, Deployments, and necessary Secrets. |
 | `nginx/` | Kubernetes manifests and configuration files for the **NGINX** web server. NGINX typically acts as an Ingress Controller or a high-performance reverse proxy in this setup. |
 | `README.md` | This documentation file. |
