@@ -4,7 +4,11 @@ metadata:
   name: apache-deployment
   namespace: autoscale
 spec:
+<<<<<<< HEAD
+  replicas: 1
+=======
   replicas: 2
+>>>>>>> 26d6d17a889f82d5ec50877b45f9edb9984e0718
   selector:
     matchLabels:
       app: apache

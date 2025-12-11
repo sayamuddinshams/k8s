@@ -1,0 +1,9 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  namespace: autoscale
+  name: pod-reader
+rules:
+- apiGroups: [""]       # "" means core API group
+  resources: ["pods"]   # resource(s) to access
+  verbs: ["get", "list", "watch"]  # allowed actions
